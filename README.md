@@ -56,8 +56,18 @@ value_1+value_2, key_2: value_2+value_1}. If either of the keys do not exist in 
 message “Concat failed as at least one of the keys does not exist” should be displayed. Else,
 the final value of key_2 should be displayed. No input will be provided where <key_1> = <key_2>.
 - `fetch <key>` : must display the value corresponding to the key if it exists at the connected server, and an error
-“Key does not exist” otherwise
+“Key does not exist” otherwise.
 
+## INPUT AND RUNNING THE CODE
+	
+Server: The server will be run by using the following command:
+	$ ./server <number of worker threads in the thread pool>
+Client: The client will be run by using the following command:
+	$ ./client
+- The first line of input would be the total number of user requests throughout the simulation (m).
+- The next ‘m’ lines contain description of the user requests in non-decreasing order of the first token
+	- <Time in sec after which the request to connect to the server is to be made> <cmd with appropriate arguments>
+	
 ## REPORT
 
 - **CLIENTS.CPP**
