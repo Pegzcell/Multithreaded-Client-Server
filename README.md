@@ -1,10 +1,10 @@
-#Multi-threaded Client Server Model
+# Multi-threaded Client Server Model
 
 This operating system networking model allows clients to make requests on the server. The clients are simulated by threads of a single progrem, while the server executes the client requests from distinct user threads employing its own various worker threads.
 
 Hence, it's a system of client-server interfacing, that is optimized by incorporating concurrency and parallelism in linux-based systems that support multi-threading.
 
-##Requirements
+## FUNCTIONALITY
 
 **Client program**
 - Each user request has 2 main characteristics:
@@ -58,7 +58,7 @@ the final value of key_2 should be displayed. No input will be provided where <k
 - `fetch <key>` : must display the value corresponding to the key if it exists at the connected server, and an error
 “Key does not exist” otherwise
 
-##REPORT
+## REPORT
 
 - **CLIENTS.CPP**
 	- client spawns `M user threads`, each of which connects to the server individually, on different sockets, to simulate distinct clients. 
