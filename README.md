@@ -70,7 +70,7 @@ Client: The client will be run by using the following command:
 	
 - The first line of input would be the total number of user requests throughout the simulation (m).
 - The next ‘m’ lines contain description of the user requests in non-decreasing order of the first token
-	- /<Time in sec after which the request to connect to the server is to be made/> /<cmd with appropriate arguments/>
+	- `Time in sec after which the request to connect to the server is to be made` `cmd with appropriate arguments`
 	
 ## REPORT
 
